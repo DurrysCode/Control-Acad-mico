@@ -10,9 +10,35 @@
 
 <body>
     <div class="container">
-        <h1>Sistema de Control Académico</h1>
-        <button class="btn liquid" onclick="window.location.href='/Home'">Entrar</button>
-        <div class="message" id="mensaje"></div>
+        <h1>
+            <a href="#menu">Empezar!</a>
+        </h1>
+
+        <div class="popover" id="menu">
+            <div class='content'>
+                <a href="#" class="close"></a>
+                <div class='nav'>
+                    <ul class='nav_list'>
+                        <div class='nav_list_item'>
+                            <li><a href="#">Home</a></li>
+                        </div>
+                        <div class='nav_list_item'>
+                            <li><a href="#">About</a></li>
+                        </div>
+                        <div class='nav_list_item'>
+                            <li><a href="#">Products</a></li>
+                        </div>
+                        <div class='nav_list_item'>
+                            <li><a href="#">Services</a></li>
+                        </div>
+                        <div class='nav_list_item'>
+                            <li><a href="#">Contact</a></li>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="/static/scripts/principal.js"></script>
