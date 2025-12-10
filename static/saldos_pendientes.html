@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/saldos_pendientes.css">
+    <link rel="icon" type="image/png" href="/static/images/colegio_ventana.png">
+    <title>CTE</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestión de Saldos</h1>
+
+        <div class="controls">
+            <form id="dataForm">
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="telefono" placeholder="Teléfono" required>
+                    <input type="text" id="departamento" placeholder="Departamento" required>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" id="submitBtn">Agregar</button>
+                    <button type="button" class="btn-cancel" id="cancelBtn" style="display: none;">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID alumno</th>
+                        <th>Nombre alumno</th>
+                        <th>Padre</th>
+                        <th>Madre</th>
+                        <th>Encargado</th>
+                        <th>Saldos pendientes</th>
+                        <th>Mora</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td colspan="6" class="empty-state">No hay datos disponibles. Agrega un nuevo registro.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/static/scripts/saldos_pendientes.js"></script>
+</body>
+
+</html>
